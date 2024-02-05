@@ -13,6 +13,7 @@ CORS(app)
 migrate = Migrate(app, db)
 
 db.init_app(app)
+#get
 
 @app.route('/messages', methods=['GET', 'POST'])
 def messages():
